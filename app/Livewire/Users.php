@@ -21,12 +21,12 @@ use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
 use Livewire\WithFileUploads;
+use Livewire\WithoutUrlPagination;
 use Livewire\WithPagination;
 
 class Users extends Component
 {
-  use WithFileUploads;
-  use WithPagination;
+  use WithFileUploads,  WithPagination, WithoutUrlPagination;
 
   protected $paginationTheme = 'bootstrap';
 
@@ -46,7 +46,7 @@ class Users extends Component
 
   public function render()
   {
-    $users = User::latest('id')->paginate(5);
+    $users = User::latest('id')->paginate(5)->onEachSide(1);
     return view('livewire.users', compact('users'));
   }
 
