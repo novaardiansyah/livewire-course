@@ -47,7 +47,7 @@
     ],
     "dev": [
       "Composer\\Config::disableProcessTimeout",
-      "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\" --names='server,queue,vite'"
+      "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve --port=7107 --host=100.108.9.46\" \"php artisan queue:listen --tries=1\" \"npm run dev\" --names='server,queue,vite'"
     ],
     "test": [
       "@php artisan config:clear --ansi",
@@ -70,14 +70,6 @@
     ],
     "pre-package-uninstall": [
       "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
-    ],
-    "serve": [
-      "Composer\\Config::disableProcessTimeout",
-      "@php artisan serve --port=7107 --host=100.108.9.46"
-    ],
-    "queue": [
-      "Composer\\Config::disableProcessTimeout",
-      "@php artisan queue:listen --tries=1"
     ]
   },
   "extra": {
