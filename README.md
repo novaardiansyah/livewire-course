@@ -1,59 +1,46 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Livewire Course - Learning Journey
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Hi Future Developer,
 
-## About Laravel
+Welcome to **Livewire Course**! This project is a dedicated space for learning [Livewire](https://livewire.laravel.com/) from scratch. While I have experience with [Filament](https://filamentphp.com/) PHP and have built several projects using it, I realized that a deep understanding of [Livewire](https://livewire.laravel.com/) is essential for creating custom components and advanced interactions in [Filament](https://filamentphp.com/). This project serves as my hands-on learning path to master the fundamentals and advanced concepts of [Livewire](https://livewire.laravel.com/).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Dazzling Tech Stack
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [Laravel 12](https://laravel.com/) - Backend PHP Framework
+- [Livewire 3](https://livewire.laravel.com/) - Full-stack framework for Laravel
+- [PHP 8.3+](https://www.php.net/) - Server-side language
+- [PostgreSQL](https://www.postgresql.org/) - Database Management
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Demo Version
+Coming soon.
 
-## Learning Laravel
+## Let's Connect
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Need to chat? Feel free to drop me a line via [Email](mailto:novaardiansyah78@gmail.com) or hit me up on [WhatsApp](https://wa.me/6289506668480?text=Hi%20Nova,%20I%20have%20a%20question%20about%20your%20project%20Livewire%20Course). I'm just a message away!
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Project Status
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![stages](https://img.shields.io/badge/stages-development-informational)
+![Laravel](https://img.shields.io/badge/Laravel-12-blue)
+![PHP](https://img.shields.io/badge/PHP-8.3-blue)
+![Livewire](https://img.shields.io/badge/Livewire-3-blue)
+![size](https://img.shields.io/github/repo-size/novaardiansyah/livewire-course?label=size&color=informational)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![last commit](https://img.shields.io/github/last-commit/novaardiansyah/livewire-course?label=last%20commit&color=informational)](commits/main)
 
 ## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+We believe in fostering a welcoming and inclusive environment for everyone. Please be respectful, considerate, and constructive in all interactions. By participating in this project, you agree to uphold our Code of Conduct. Let's collaborate and make this community awesome together!
 
-## Security Vulnerabilities
+## Licensing Groove
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+This project is licensed under the [MIT License](LICENSE).
 
-## License
+Feel free to use, modify, and share it with the world. Just remember to keep the original license intact. Let's spread the joy of coding together!
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+**Happy coding and collaborating!**
+
+— Nova Ardiansyah
