@@ -19,7 +19,6 @@ echo "--> Artisan migrate..."
 php artisan migrate --force
 
 echo "--> Artisan optimize cache..."
-php artisan filament:optimize
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
