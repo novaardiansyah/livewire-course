@@ -20,9 +20,11 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
+use Livewire\WithFileUploads;
 
 class Users extends Component
 {
+  use WithFileUploads;
   public $modalPluralLabel = 'Users';
   public $users = null;
 
@@ -35,6 +37,9 @@ class Users extends Component
   #[Validate('required|min:8')]
   public $password = '';
 
+  #[Validate('image|max:5120|mimetypes:image/png,image/jpeg,image/jpg,image/webp')]
+  public $avatar = null;
+
   public function render()
   {
     $this->users = User::orderBy('id', 'desc')->get();
@@ -43,12 +48,17 @@ class Users extends Component
 
   public function create()
   {
-    $this->validate();
+    $validated = $this->validate();
+
+    if ($this->avatar) {
+      $validated['avatar'] = $this->avatar->store('avatars', 'public');
+    }
 
     User::create([
-      'name' => $this->name,
-      'email' => $this->email,
-      'password' => Hash::make($this->password),
+      'name' => $validated['name'],
+      'email' => $validated['email'],
+      'password' => Hash::make($validated['password']),
+      'avatar' => $validated['avatar'],
     ]);
 
     $this->reset();
