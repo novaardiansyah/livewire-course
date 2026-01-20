@@ -44,9 +44,21 @@ class Users extends Component
   #[Validate('image|max:5120|mimetypes:image/png,image/jpeg,image/jpg,image/webp')]
   public $avatar = null;
 
+  public $query = '';
+
   public function render()
   {
-    $users = User::latest('id')->paginate(5)->onEachSide(1);
+    $query = User::latest('id');
+
+    if ($this->query) {
+      $this->resetPage();
+
+      $query->where('name', 'ilike', '%' . $this->query . '%');
+      $query->orWhere('email', 'ilike', '%' . $this->query . '%');
+    }
+
+    $users = $query->paginate(5)->onEachSide(1);
+
     return view('livewire.users', compact('users'));
   }
 

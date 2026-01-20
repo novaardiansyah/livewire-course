@@ -73,6 +73,10 @@
       <h1 class="h2">List User</h1>
       <hr class="my-0 mb-3">
 
+      <div class="form-group mb-3">
+        <input type="text" class="form-control" placeholder="Search user by name or email" wire:model="query" wire:model.live.debounce.350ms="query" />
+      </div>
+
       <ul class="list-unstyled">
         @foreach ($users as $user)
           @php
