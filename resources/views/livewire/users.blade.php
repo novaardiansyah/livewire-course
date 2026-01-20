@@ -83,7 +83,7 @@
             $avatar = $user->avatar ? asset('storage/' . $user->avatar) : asset('images/default-avatar.png');
           @endphp
 
-          <li class="media">
+          <li class="media" wire:key="{{ $user->id }}">
             <img src="{{ $avatar }}" class="mr-3 rounded-circle" alt="Avatar" width="40" height="40" />
 
             <div class="media-body row justify-content-between align-items-center">
