@@ -52,9 +52,7 @@ class Users extends Component
 
     if ($this->query) {
       $this->resetPage();
-
-      $query->where('name', 'ilike', '%' . $this->query . '%');
-      $query->orWhere('email', 'ilike', '%' . $this->query . '%');
+      $query->search($this->query);
     }
 
     $users = $query->paginate(5)->onEachSide(1);
